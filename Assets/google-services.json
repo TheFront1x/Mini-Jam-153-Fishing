@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "770905404337",
+    "project_id": "minijam153fishing",
+    "storage_bucket": "minijam153fishing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770905404337:android:61784b74e83672f15f8390",
+        "android_client_info": {
+          "package_name": "com.xantezza.gamejamFishing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHs_b16On0YNva_RQIP0iQ3yMNGvTiWN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
