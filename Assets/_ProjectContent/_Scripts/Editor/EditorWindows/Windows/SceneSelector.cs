@@ -17,6 +17,12 @@ namespace Editor.EditorWindows.Windows
             if (sceneCount == _scenes.Length) UpdateScenes(this);
         }
 
+        [MenuItem("Tools/Scene Selector", false, 10)]
+        public static void OpenWindow1()
+        {
+            OpenWindow();
+        }
+
         [MenuItem("Window/Scene Selector", false, 10)]
         public static void OpenWindow()
         {

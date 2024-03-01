@@ -25,7 +25,11 @@ namespace Infrastructure.StateMachines.GameLoopStateMachine.States
 
         private void ToNextState()
         {
+#if PLATFORM_WEBGL
+            _gameLoopStateMachine.Enter<InitializeSaveServiceState>();
+#else
             _gameLoopStateMachine.Enter<InitializeAnalyticsState>();
+#endif
         }
 
         public async void Enter()

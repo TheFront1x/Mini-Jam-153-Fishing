@@ -15,9 +15,13 @@ EditorBuildSettings:
     path: Assets/_ProjectContent/Scenes/Menu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/_ProjectContent/Scenes/Gameplay.unity
-    guid: 8854245f3ede4384e83a8451d4921c83
+    path: Assets/ThirdParty/Low Poly Furniture/Demos/DemoScene.unity
+    guid: f7dc9ee0cbbcb494fa83e9eb38a486bf
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9a74fdaf39bc6ac488bf0d826c1bdd9a,
+      type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
+      guid: df56625a460db184e94165f4967bccc1, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 798008f074f7e8b4d86d952372b57b79, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: 30b390c7824f0424aafeb37bc423e48b,

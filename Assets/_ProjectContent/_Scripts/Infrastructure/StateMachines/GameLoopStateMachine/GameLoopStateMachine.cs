@@ -19,7 +19,8 @@ namespace Infrastructure.StateMachines.GameLoopStateMachine
             RegisterState(instantiator.Instantiate<EntryPointState>(extraArgs));
             RegisterState(instantiator.Instantiate<InitializeDefaultConfigState>(extraArgs));
             RegisterState(instantiator.Instantiate<LoadSceneState>(extraArgs));
-            RegisterState(instantiator.Instantiate<InitializeRemoteConfigState>(extraArgs));
+            RegisterState(instantiator.Instantiate<InitializeFirebaseRemoteConfigState>(extraArgs));
+            RegisterState(instantiator.Instantiate<InitializeUnityRemoteConfigState>(extraArgs));
             RegisterState(instantiator.Instantiate<InitializeDebugState>(extraArgs));
             RegisterState(instantiator.Instantiate<InitializeAnalyticsState>(extraArgs));
             RegisterState(instantiator.Instantiate<InitializeSaveServiceState>(extraArgs));

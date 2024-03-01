@@ -27,7 +27,11 @@ namespace Infrastructure.StateMachines.GameLoopStateMachine.States
 
         private void ToNextState()
         {
-            _gameLoopStateMachine.Enter<InitializeRemoteConfigState>();
+#if PLATFORM_WEBGL
+            _gameLoopStateMachine.Enter<InitializeUnityRemoteConfigState>();
+#else
+            _gameLoopStateMachine.Enter<InitializeFirebaseRemoteConfigState>();
+#endif
         }
 
         private void OnLoadingSceneLoadedCallback()

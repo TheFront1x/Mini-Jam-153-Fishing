@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Firebase.RemoteConfig;
 using Infrastructure.Services.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;

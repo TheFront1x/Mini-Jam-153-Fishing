@@ -49,9 +49,9 @@ namespace Infrastructure.Services.Analytics
 
 #if UNITY_EDITOR
             FirebaseAnalytics.SetUserId($"DEVELOPER_{Environment.UserName}");
-#elif DEV
+#elif DEV && !PLATFORM_WEBGL
             FirebaseAnalytics.SetUserId($"TESTER_{SystemInfo.deviceUniqueIdentifier}");
-#else
+#elif !PLATFORM_WEBGL
             FirebaseAnalytics.SetUserId($"USER_{SystemInfo.deviceUniqueIdentifier}");
 #endif
             FirebaseAnalytics.SetSessionTimeoutDuration(new TimeSpan(0, 30, 0));
